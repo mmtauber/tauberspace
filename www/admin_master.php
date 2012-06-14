@@ -1,4 +1,6 @@
 <?php
+	include('includes/constants.php');
+
 	session_start();
 	if(!session_is_registered("tallbikejoust")){
 		echo "Access denied!";
@@ -21,7 +23,7 @@
 					<?php echo $page_main_content; ?>
 				</div>
 			</div>
-			<?php require_once('includes/db.php'); ?>
+			<?php require_once(DB_PATH); ?>
 		</div>
 	</body>
 </html>

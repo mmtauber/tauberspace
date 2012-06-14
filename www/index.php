@@ -1,4 +1,5 @@
 <?php
+	include('includes/constants.php');
 	ob_start();
 ?>
 
@@ -36,7 +37,7 @@ so why not have the first be custom made, from kashmir, and dirt cheap!</p>
 	ob_end_clean();
 	$page_title = 'Tauberspace.com - Homepage';
 	include('master.php');
-	include('/includes/db.class');
+	include(DB_PATH);
 
 ?>
 
