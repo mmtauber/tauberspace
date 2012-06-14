@@ -1,5 +1,5 @@
 <?php
-include('includes/db.php');
+include('../');
 
 $db = new DatabaseManipulator;
 $list = $db->MyList("blog_entry");

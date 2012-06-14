@@ -24,7 +24,7 @@
 			<?php require_once('includes/db.php'); ?>
 		</div>
 	</body>
-</html
+</html>
 <?php
 	}	
 ?>

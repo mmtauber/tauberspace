@@ -1,1 +1,5 @@
 includes/db.php
+www/.DS_Store
+www/.buildpath
+www/.project
+www/.settings
