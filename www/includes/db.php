@@ -5,7 +5,7 @@ class DatabaseManipulator {
 private $link;
 
 function __construct() {
-	$this->link = mysql_connect('127.0.0.1:3306', 'tauberspace_com', 'tauberspace_mark');
+	$this->link = mysql_connect('127.0.0.1:3306', 'test', 'test');
 	if (!$this->link) {
 	    die('Could not connect: ' . mysql_error());
 	}
