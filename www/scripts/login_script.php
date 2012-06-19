@@ -5,8 +5,8 @@ $password = $_POST['password'];
 
 if ($user == "test") {
 	if ($password ==  "test") {	
-		session_register("tallbikejoust");
-		session_register("packback102938");
+		session_register("");
+		session_register("");
 		header("location:/admin_index.php");
 	}
 } 
