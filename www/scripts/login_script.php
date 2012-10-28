@@ -1,10 +1,12 @@
 <?php
 
+include('../../cred.php');
+
 $user = $_POST['user'];
 $pass = $_POST['password'];
 
-if( $user == "tallbikejoust") {
-	if( $pass == "packback102938") {	
+if( crypt($user, $username) == $username) {
+	if( crypt($pass, $password) == $password) {	
 		session_register("");
 		header("location:/admin_index.php");
 	}
