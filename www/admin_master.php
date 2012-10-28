@@ -1,5 +1,6 @@
 <?php
 	include('includes/constants.php');
+	require_once(DB_PATH);
 
 	session_start();
 	if(!session_is_registered("tallbikejoust")){
@@ -23,7 +24,6 @@
 					<?php echo $page_main_content; ?>
 				</div>
 			</div>
-			<?php require_once(DB_PATH); ?>
 		</div>
 	</body>
 </html>
