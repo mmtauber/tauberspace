@@ -4,9 +4,6 @@
 		echo "Access denied!";
 	}
 	else {
-		
-		include('includes/constants.php');
-		include(DB_PATH);
 ?>
 		<html>
 			<title><?php echo $page_title; ?></title>

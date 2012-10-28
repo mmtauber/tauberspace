@@ -1,4 +1,7 @@
 <?php
+include('includes/constants.php');
+require_once(DB_PATH);
+
 $db = new DatabaseManipulator;
 $list = $db->MyList("blog_entry");
 
