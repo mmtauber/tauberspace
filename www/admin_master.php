@@ -6,7 +6,7 @@
 	else {
 		
 		include('includes/constants.php');
-		require_once(DB_PATH);
+		include(DB_PATH);
 ?>
 		<html>
 			<title><?php echo $page_title; ?></title>
