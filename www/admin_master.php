@@ -1,6 +1,7 @@
 <?php
+	include('../../cred.php');
 	session_start();
-	if(!session_is_registered("tallbikejoust")){
+	if(!session_is_registered( $username )){
 		echo "Access denied!";
 	}
 	else {
