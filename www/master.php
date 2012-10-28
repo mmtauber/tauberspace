@@ -1,6 +1,6 @@
 <?php
 	include('includes/constants.php');
-	ob_start();
+	include(DB_PATH);
 ?>
 
 <html>
@@ -22,7 +22,6 @@
 				</div>
 			</div>
 			<div id="footer"><?php require_once('footer.php'); ?></div>
-			<?php require_once('includes/db.php'); ?>
 		</div>
 	</body>
 </html>

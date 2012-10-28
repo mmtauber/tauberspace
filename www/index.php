@@ -36,7 +36,5 @@ so why not have the first be custom made, from kashmir, and dirt cheap!</p>
 	ob_end_clean();
 	$page_title = 'Tauberspace.com - Homepage';
 	include('master.php');
-	include(DB_PATH);
-
 ?>
 
