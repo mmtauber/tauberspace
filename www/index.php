@@ -1,5 +1,4 @@
 <?php
-	include('includes/constants.php');
 	ob_start();
 ?>
 

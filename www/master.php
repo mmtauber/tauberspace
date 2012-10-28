@@ -1,3 +1,8 @@
+<?php
+	include('includes/constants.php');
+	ob_start();
+?>
+
 <html>
 	<title><?php echo $page_title; ?></title>
 	<head>
