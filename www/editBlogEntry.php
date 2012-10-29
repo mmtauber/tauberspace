@@ -3,7 +3,9 @@ include('../db.php');
 
 $blogEntryId = $_GET['id'];
 $db = new DatabaseManipulator;
-$entry = $db->MyFind("blog_entry", $blogEntryId);
+$result = $db->MyFind("blog_entry", $blogEntryId);
+
+$entry = mysql_fetch_object($result);
 
 ob_start();
 ?>
