@@ -36,16 +36,16 @@ ob_start();
 <?php while ($row = mysql_fetch_object($list)) { ?>
 	<tr>
 		<td>
-			<?php echo $row->blog_entry_id; ?>
+			<?php echo $row->id; ?>
 		</td>
 		<td>
 			<?php echo $row->title; ?>
 		</td>
 		<td>
-			<a href="/editBlogEntry.php?id=<?php echo $row->blog_entry_id; ?>">Edit</a>
+			<a href="/editBlogEntry.php?id=<?php echo $row->id; ?>">Edit</a>
 		</td>
 		<td>
-			<a href="/deleteBlogEntry.php?id=<?php echo $row->blog_entry_id ?>">Delete</a>
+			<a href="/deleteBlogEntry.php?id=<?php echo $row->id ?>">Delete</a>
 		</td>	
 	</tr>
 <?php } ?>
