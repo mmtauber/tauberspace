@@ -1,7 +1,7 @@
 <?php
 include('../db.php');
 
-$blogEntryId = $_GET('id');
+$blogEntryId = $_GET['id'];
 $db = new DatabaseManipulator;
 $entry = $db->MyFind("blog_entry", $blogEntryId);
 
