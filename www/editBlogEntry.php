@@ -1,22 +1,21 @@
 <?php
-include('includes/db.php');
+include('../db.php');
 
 $blogEntryId = $_GET('id');
-echo $blogEntryId;
 $db = new DatabaseManipulator;
-$list = $db->MyList("blog_entry");
+$entry = $db->MyFind("blog_entry", $blogEntryId);
 
 ob_start();
 ?>
 
-<form  method="post" action="scripts/new_article_submit.php">
-
+<form  method="post" action="scripts/update_article_submit.php">
 	<p><label>Title:</label>
-	<input name="title" type="text" /></p>
+	<input name="title" type="text" value="<?php echo $entry->title ?>" /></p>
 	<p><label>Day of Week, date, location:</label>
-	<input name="subtitle" type="text" /></p>
+	<input name="subtitle" type="text" value="<?php echo $entry->subtitle ?>" /></p>
 	<p><label>Content:</label>
-	<input name="content" type="text"  /></p>
+	<input name="content" type="text" value="<?php echo $entry->content ?>" /></p>
+	<input name="active" type="checkbox" checked="<?php echo $entry->active ?>" value="active" /></p>
 	<input type="submit" />
 </form>
 
